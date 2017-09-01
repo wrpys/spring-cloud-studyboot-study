@@ -1,0 +1,14 @@
+server:
+  port: 80
+
+#第一次访问超时解决
+#该配置是让Hystrix的超时时间改为5秒
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+#该配置，用于禁用Hystrix的超时时间:hystrix.command.default.execution.timeout.enabled: false
+#该配置，用于索性禁用feign的hystrix。feign.hystrix.enabled: false
