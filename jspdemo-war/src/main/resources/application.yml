@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  context-path: /jspdemo
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
