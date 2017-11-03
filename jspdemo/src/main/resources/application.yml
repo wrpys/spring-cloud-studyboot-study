@@ -1,9 +1,13 @@
 server:
-  port: 8080
-  context-path: /jspdemo
+  port: 9503
+#  context-path: /jspdemo
 
 spring:
   mvc:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+  http:
+    multipart:
+      max-file-size: 2000MB
+      max-request-size: 2500MB

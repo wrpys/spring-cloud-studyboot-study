@@ -13,6 +13,7 @@
 
     <modules>
         <module>jspdemo</module>
+        <module>jspdemo-war</module>
         <module>my-spring-boot-starter</module>
         <module>spring_boot_demo</module>
         <module>SpringCloubDemo</module>
