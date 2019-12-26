@@ -1,0 +1,6 @@
+spring:
+  resources:
+    static-locations: classpath:pages
+server:
+  servlet:
+    context-path: /summary

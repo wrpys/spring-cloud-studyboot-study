@@ -1,0 +1,162 @@
+/**
+公共样式
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+body {
+    background: #F5F6F7;
+}
+
+.title {
+    margin: 20px 40px;
+    font-size: 16px;
+    color: #6d7c8b;
+    font-weight: 700;
+    height: 21px;
+    line-height: 21px;
+}
+
+.title .left {
+    border-left: 2px solid #419eff;
+    margin-right: 5px;
+    display: inline-block;
+    height: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title .link:hover {
+    color: #419eff;
+    cursor: pointer;
+}
+
+.title .active {
+    color: #419eff;
+}
+
+.diagramContainer {
+    padding: 10px;
+    margin: 20px 0 20px 20px;
+    min-height: 120px;
+    /*border: 1px solid #EBEEF5;*/
+    /*background: #FFFFFF;*/
+    border-radius: 5px;
+}
+
+.sub-step {
+    height: 150px;
+    min-width: 95px;
+    border-radius: 20px;
+    float: left;
+    margin-left: 60px;
+    padding: 8px 16px;
+
+    border: 1.5px dashed transparent;
+    background: linear-gradient(#F5F6F7, #F5F6F7) padding-box,
+    repeating-linear-gradient(-45deg, #98CEE3, #98CEE3 4px, #F5F6F7, #F5F6F7 8px);
+}
+
+.step-title {
+    color: #7B868C;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item {
+    height: 90px;
+    line-height: 90px;
+    width: 90px;
+    border: 1.5px solid #7B868C;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+    cursor: pointer;
+    color: #7B868C;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-color {
+    border: 1.5px solid #00A0E8;
+    background: #00A0E8;
+    color: #FFFFFF;
+}
+
+.order {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+}
+
+.order .line {
+    display: inline-block;
+    width: 43%;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.order .txt {
+    vertical-align: middle;
+    font-size: 16px;
+    color: #6d7c8b;
+    font-weight: 700;
+    display: inline-block;
+    width: 13%;
+}
+
+.step-task {
+    display: none;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+.step-task ul {
+    margin-left: 20px;
+}
+
+.step-task ul li {
+    list-style: none;
+    position: relative;
+}
+
+.graycircle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    border: 1px solid #d8d8d8;
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    background: #00A0E8;
+    color: #FFFFFF;
+    font-style: normal;
+    text-align: center;
+}
+
+.task-content {
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 95%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #6d7c8b;
+    font-size: 13px;
+    font-family: PingFangSC-Medium;
+    margin-left: 25px;
+}

@@ -1,0 +1,98 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>实时传感数据分析</title>
+  <link rel="stylesheet" type="text/css" href="flows/common.css" />
+</head>
+
+<body class="">
+  <p class="title"><i class="left"></i><span class="link" onclick="toSummary();">概览</span>&nbsp;>&nbsp;<span class="active">实时传感数据分析</span></p>
+  <!-- 外层div的class必须为：diagramContainer -->
+  <div class="diagramContainer">
+    <!-- 步骤id必须存在、task-id为子步骤div的id、class：item jtk-endpoint-anchor jtk-connected都需要设置 -->
+    <div id="step11" task-id="step11-task" class="item jtk-endpoint-anchor jtk-connected" style="margin-left: 20px;">
+      数据采集
+    </div>
+    <div id="step12" task-id="step12-task" class="item jtk-endpoint-anchor jtk-connected" style="margin-left: 120px;">
+      <p style="height: 45px; line-height: 70px;">实时传感</p>
+      <p style="height: 45px; line-height: 20px;">数据分析</p>
+    </div>
+    <div id="step13" task-id="step13-task" class="item jtk-endpoint-anchor jtk-connected" style="margin-left: 120px;">
+      数据展示
+    </div>
+
+    <div class="clearfloat"></div>
+
+    <!-- 子步骤id,与上面task-id对应。class为step-task -->
+    <div id="step11-task" class="step-task">
+      <div class="order">
+        <span class="line"></span>
+        <span class="txt">数据采集</span>
+        <span class="line"></span>
+      </div>
+      <ul>
+        <li>
+          <i class="graycircle">1</i>
+          <span class="task-content">新增分组【点击新增分组->填写分组信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">2</i>
+          <span class="task-content">新增设备【点击新增设备->填写设备信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">3</i>
+          <span class="task-content">新增终端【点击新增终端->填写终端信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">4</i>
+          <span class="task-content">指令配置【点击新增指令->填写指令信息】</span>
+        </li>
+      </ul>
+    </div>
+    <div id="step12-task" class="step-task">
+      <div class="order">
+        <span class="line"></span>
+        <span class="txt">实时传感数据分析</span>
+        <span class="line"></span>
+      </div>
+      <ul>
+        <li>
+          <i class="graycircle">1</i>
+          <span class="task-content">新增任务【点击新增任务->填写任务信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">2</i>
+          <span class="task-content">任务流程编辑【kafka消息抽取->实时采集处理器->Kafka消息加载】</span>
+        </li>
+        <li>
+          <i class="graycircle">3</i>
+          <span class="task-content">任务发布调度【任务发布->分配主机资源->数据库配置->任务调度】</span>
+        </li>
+        <li>
+          <i class="graycircle">4</i>
+          <span class="task-content">任务运行【配置调用时间->任务 运行->任务监控】</span>
+        </li>
+      </ul>
+    </div>
+    <div id="step13-task" class="step-task">
+      <div class="order">
+        <span class="line"></span>
+        <span class="txt">数据展示</span>
+        <span class="line"></span>
+      </div>
+      <ul>
+        <li>
+          <i class="graycircle">1</i>
+          <span class="task-content">实时传感数据分析【查看实时传感数据】</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jsplumb.min.js"></script>
+  <script type="text/javascript" src="flows/common.js"></script>
+</body>
+</html>

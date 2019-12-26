@@ -1,0 +1,22 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mybatis-plus-demo?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: 123456
+mybatis-plus:
+  mapper-locations: classpath:mapper/*/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+logging:
+  level:
+    root: warn
+    com.wrpys.spring.sys.mapper: trace
+  pattern:
+    console: '%p%m%n'

@@ -1,0 +1,138 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>最优生长因子计算</title>
+  <link rel="stylesheet" type="text/css" href="flows/common.css" />
+</head>
+
+<body class="">
+  <p class="title"><i class="left"></i><span class="link" onclick="toSummary();">概览</span>&nbsp;>&nbsp;<span class="active">最优生长因子计算</span></p>
+  <!-- 外层div的class必须为：diagramContainer -->
+  <div class="diagramContainer">
+    <!-- 步骤id必须存在、task-id为子步骤div的id、class：item jtk-endpoint-anchor jtk-connected都需要设置 -->
+    <div id="step11" task-id="step11-task" class="item jtk-endpoint-anchor jtk-connected" style="margin-left: 20px; margin-top: 36px;">
+      数据采集
+    </div>
+    <div class="sub-step">
+      <p class="step-title">数据处理</p>
+      <div id="step12" task-id="step12-task" class="item jtk-endpoint-anchor jtk-connected">
+        <p style="height: 45px; line-height: 70px;">数据加密</p>
+        <p style="height: 45px; line-height: 20px;">存储入库</p>
+      </div>
+      <div id="step13" task-id="step13-task" class="item jtk-endpoint-anchor jtk-connected" style="margin-left: 120px; margin-right: 60px;">
+        <p style="height: 45px; line-height: 70px;">最优生长</p>
+        <p style="height: 45px; line-height: 20px;">因子计算</p>
+      </div>
+    </div>
+    <div id="step4" task-id="step14-task" class="item jtk-endpoint-anchor jtk-connected" style="margin-top: 36px;">
+      数据展示
+    </div>
+
+    <div class="clearfloat"></div>
+
+    <!-- 子步骤id,与上面task-id对应。class为step-task -->
+    <div id="step11-task" class="step-task">
+      <div class="order">
+        <span class="line"></span>
+        <span class="txt">数据采集</span>
+        <span class="line"></span>
+      </div>
+      <ul>
+        <li>
+          <i class="graycircle">1</i>
+          <span class="task-content">新增分组【点击新增分组->填写分组信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">2</i>
+          <span class="task-content">新增设备【点击新增设备->填写设备信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">3</i>
+          <span class="task-content">新增终端【点击新增终端->填写终端信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">4</i>
+          <span class="task-content">指令配置【点击新增指令->填写指令信息】</span>
+        </li>
+      </ul>
+    </div>
+    <div id="step12-task" class="step-task">
+      <div class="order">
+        <span class="line"></span>
+        <span class="txt">数据加密存储入库</span>
+        <span class="line"></span>
+      </div>
+      <ul>
+        <li>
+          <i class="graycircle">1</i>
+          <span class="task-content">新增任务【点击新增任务->填写任务信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">2</i>
+          <span class="task-content">任务流程编辑【FTP采集文件到本地->文件数据加密->FTP采集到HDFS->清空mysql相关历史数据->数据导入mysql->清空hive相关历史数据->数据导入hive并备份】</span>
+        </li>
+        <li>
+          <i class="graycircle">3</i>
+          <span class="task-content">任务发布调度【任务发布->分配主机资源->数据库配置->任务调度】</span>
+        </li>
+        <li>
+          <i class="graycircle">4</i>
+          <span class="task-content">任务运行【配置调用时间->任务 运行->任务监控】</span>
+        </li>
+      </ul>
+    </div>
+    <div id="step13-task" class="step-task">
+      <div class="order">
+        <span class="line"></span>
+        <span class="txt">最优生长因子计算</span>
+        <span class="line"></span>
+      </div>      
+      <ul>
+        <li>
+          <i class="graycircle">1</i>
+          <span class="task-content">新增任务【点击新增任务->填写任务信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">2</i>
+          <span class="task-content">任务流程编辑【HDFS相应的目录清空->Hive最优生长计算组件->清空mysql相关历史数据->HDFS数据加载到MYSQL->发送消息kafka组件】</span>
+        </li>
+        <li>
+          <i class="graycircle">3</i>
+          <span class="task-content">任务发布调度【任务发布->分配主机资源->数据库配置->任务调度】</span>
+        </li>
+        <li>
+          <i class="graycircle">4</i>
+          <span class="task-content">任务运行【配置调用时间->任务 运行->任务监控】</span>
+        </li>
+      </ul>
+    </div>
+    <div id="step14-task" class="step-task">
+      <div class="order">
+        <span class="line"></span>
+        <span class="txt">数据展示</span>
+        <span class="line"></span>
+      </div>
+      <ul>
+        <li>
+          <i class="graycircle">1</i>
+          <span class="task-content">配置传感器【点击新增按钮->填写传感器设备信息->绑定企业和地块】</span>
+        </li>
+        <li>
+          <i class="graycircle">2</i>
+          <span class="task-content">新增排产【点击新增排产->填写排产信息】</span>
+        </li>
+        <li>
+          <i class="graycircle">3</i>
+          <span class="task-content">查看最优因子【选择品种->点击分析图标按钮->查看品种最优因子数据】</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jsplumb.min.js"></script>
+  <script type="text/javascript" src="flows/common.js"></script>
+</body>
+</html>
