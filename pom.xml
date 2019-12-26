@@ -16,7 +16,11 @@
         <module>jspdemo-war</module>
         <module>my-spring-boot-starter</module>
         <module>spring_boot_demo</module>
-        <module>SpringCloubDemo</module>
+        <module>mybatis-plus-demo</module>
+        <module>summary</module>
+        <module>netty-common</module>
+        <module>netty-client</module>
+        <module>netty-server</module>
     </modules>
 
 </project>
