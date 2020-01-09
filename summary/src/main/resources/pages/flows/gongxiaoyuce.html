@@ -65,19 +65,42 @@
       <ul>
         <li>
           <i class="graycircle">1</i>
-          <span class="task-content">新增任务【点击新增任务->填写任务信息】</span>
+          <span class="task-content op-click" onclick="openTab('数据开发', '[http]http://edcweb:edc_cct_port/edc-devcenter-web/flowConfigure/taskList.do?OPER_ENV_INFO&issingle=1&scene_id=1400')">
+            打开菜单 多源异构大数据统一聚合平台->开发管理->数据开发
+          </span>
         </li>
         <li>
           <i class="graycircle">2</i>
-          <span class="task-content">任务流程编辑【FTP采集文件到本地->文件数据加密->FTP采集到HDFS->清空mysql相关历史数据->数据导入mysql->清空hive相关历史数据->数据导入hive并备份】</span>
+          <span class="task-content">
+            新增任务【点击新增->填写任务信息->保存】
+          </span>
         </li>
         <li>
           <i class="graycircle">3</i>
-          <span class="task-content">任务发布调度【任务发布->分配主机资源->数据库配置->任务调度】</span>
+          <span class="task-content">
+            任务流程编辑【点击流程配置->流程编辑->保存】
+          </span>
+          <span class="task-content" style="margin-left: 50px;">
+            流程编辑：FTP采集文件到本地->文件数据加密->FTP采集到HDFS->清空mysql相关历史数据->数据导入mysql->清空hive相关历史数据->数据导入hive并备份
+          </span>
         </li>
         <li>
           <i class="graycircle">4</i>
-          <span class="task-content">任务运行【配置调用时间->任务 运行->任务监控】</span>
+          <span class="task-content">
+            任务发布调度【点击提交调度->配置执行参数->发布调度】
+          </span>
+        </li>
+        <li>
+          <i class="graycircle">5</i>
+          <span class="task-content op-click" onclick="openTab('任务监控', '[http]http://edcweb:edc_cct_port/jutap-web/public/taskmonitor/index?OPER_ENV_INFO')">
+            打开菜单 多源异构大数据统一聚合平台->开发管理->任务监控
+          </span>
+        </li>
+        <li>
+          <i class="graycircle">6</i>
+          <span class="task-content">
+            任务运行【查询任务列表->选择数据加密存储入库任务->点击手工调度->配置触发规则->确定】
+          </span>
         </li>
       </ul>
     </div>
@@ -86,23 +109,46 @@
         <span class="line" style="float: left;"></span>
         <span class="txt">工效预测</span>
         <span class="line" style="float: right;"></span>
-      </div>      
+      </div>
       <ul>
         <li>
           <i class="graycircle">1</i>
-          <span class="task-content">新增任务【点击新增任务->填写任务信息】</span>
+          <span class="task-content op-click" onclick="openTab('数据开发', '[http]http://edcweb:edc_cct_port/edc-devcenter-web/flowConfigure/taskList.do?OPER_ENV_INFO&issingle=1&scene_id=1400')">
+            打开菜单 多源异构大数据统一聚合平台->开发管理->数据开发
+          </span>
         </li>
         <li>
           <i class="graycircle">2</i>
-          <span class="task-content">任务流程编辑【Hive工效预测组件->清空mysql相关历史数据->HDFS数据加载到MYSQL->发送消息kafka组件】</span>
+          <span class="task-content">
+            新增任务【点击新增->填写任务信息->保存】
+          </span>
         </li>
         <li>
           <i class="graycircle">3</i>
-          <span class="task-content">任务发布调度【任务发布->分配主机资源->数据库配置->任务调度】</span>
+          <span class="task-content">
+            任务流程编辑【点击流程配置->流程编辑->保存】
+          </span>
+          <span class="task-content" style="margin-left: 50px;">
+            流程编辑：Hive工效预测组件->清空mysql相关历史数据->HDFS数据加载到MYSQL->发送消息kafka组件
+          </span>
         </li>
         <li>
           <i class="graycircle">4</i>
-          <span class="task-content">任务运行【配置调用时间->任务 运行->任务监控】</span>
+          <span class="task-content">
+            任务发布调度【点击提交调度->配置执行参数->发布调度】
+          </span>
+        </li>
+        <li>
+          <i class="graycircle">5</i>
+          <span class="task-content op-click" onclick="openTab('任务监控', '[http]http://edcweb:edc_cct_port/jutap-web/public/taskmonitor/index?OPER_ENV_INFO')">
+            打开菜单 多源异构大数据统一聚合平台->开发管理->任务监控
+          </span>
+        </li>
+        <li>
+          <i class="graycircle">6</i>
+          <span class="task-content">
+            任务运行【查询任务列表->选择工效预测模型生成-->点击手工调度->配置触发规则->确定】
+          </span>
         </li>
       </ul>
     </div>
@@ -123,12 +169,14 @@
         </li>
         <li>
           <i class="graycircle">3</i>
-          <span class="task-content">查看工效预测模型【选择品种->点击分析图标按钮->选择工效预测标签页->查看工效预测数据】</span>
+          <span class="task-content">
+            查看工效预测模型【选择品种->点击分析图标按钮->选择工效预测标签页->查看工效预测数据】
+          </span>
         </li>
       </ul>
     </div>
 
-  </div>  
+  </div>
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jsplumb.min.js"></script>

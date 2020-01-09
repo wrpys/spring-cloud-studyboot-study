@@ -51,6 +51,12 @@ $(function () {
 
 })
 
+// 返回概览
 function toSummary() {
     window.location.href = "summary";
+}
+
+// 打开tab
+function openTab(menuName, menuAddr) {
+    parent.open_cct_tab(menuName, menuAddr);
 }

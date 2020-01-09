@@ -59,19 +59,42 @@
       <ul>
         <li>
           <i class="graycircle">1</i>
-          <span class="task-content">新增任务【点击新增任务->填写任务信息】</span>
+          <span class="task-content op-click" onclick="openTab('数据开发', '[http]http://edcweb:edc_cct_port/edc-devcenter-web/flowConfigure/taskList.do?OPER_ENV_INFO&issingle=1&scene_id=1400')">
+            打开菜单 多源异构大数据统一聚合平台->开发管理->数据开发
+          </span>
         </li>
         <li>
           <i class="graycircle">2</i>
-          <span class="task-content">任务流程编辑【kafka消息抽取->实时采集处理器->Kafka消息加载】</span>
+          <span class="task-content">
+            新增任务【点击新增->填写任务信息->保存】
+          </span>
         </li>
         <li>
           <i class="graycircle">3</i>
-          <span class="task-content">任务发布调度【任务发布->分配主机资源->数据库配置->任务调度】</span>
+          <span class="task-content">
+            任务流程编辑【点击流程配置->流程编辑->保存】
+          </span>
+          <span class="task-content" style="margin-left: 50px;">
+            流程编辑：kafka消息抽取->实时采集处理器->Kafka消息加载
+          </span>
         </li>
         <li>
           <i class="graycircle">4</i>
-          <span class="task-content">任务运行【配置调用时间->任务 运行->任务监控】</span>
+          <span class="task-content">
+            任务发布调度【点击提交调度->配置执行参数->发布调度】
+          </span>
+        </li>
+        <li>
+          <i class="graycircle">5</i>
+          <span class="task-content op-click" title="点击打开菜单【任务监控】" onclick="openTab('任务监控', '[http]http://edcweb:edc_cct_port/jutap-web/public/taskmonitor/index?OPER_ENV_INFO')">
+            打开菜单 多源异构大数据统一聚合平台->开发管理->任务监控
+          </span>
+        </li>
+        <li>
+          <i class="graycircle">6</i>
+          <span class="task-content">
+            任务运行【查询任务列表->选择实时传感数据分析-->点击手工调度->配置触发规则->确定】
+          </span>
         </li>
       </ul>
     </div>

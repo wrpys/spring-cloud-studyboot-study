@@ -160,3 +160,8 @@ body {
     font-family: PingFangSC-Medium;
     margin-left: 25px;
 }
+
+.op-click {
+    color: #419eff;
+    cursor: pointer;
+}
