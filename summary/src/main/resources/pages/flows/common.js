@@ -1,6 +1,9 @@
 /**
  公共设置、方法
  */
+var iotPortalWeb = "http://10.1.0.236:9103/iotPortalWeb/sta";
+var taiotRoot = "http://trace.qrclub.com.cn/taiot/"
+var taiotIndex = taiotRoot + "index.forward";
 $(function () {
 
     $('html,body').animate({"scrollTop": 0}, function () {
@@ -61,7 +64,12 @@ function openTab(menuName, menuAddr) {
     parent.open_cct_tab(menuName, menuAddr);
 }
 
-// 打开浏览器tab
-function openBrowserTab(url) {
-    window.open(url, "_blank");
+// 打开浏览器tab，访问taiot
+function openTaiotIndex() {
+    window.open(taiotIndex, "_blank");
+}
+
+// 打开浏览器tab，访问iotPortalWeb
+function opIotPortalWeb() {
+    window.open(iotPortalWeb, "_blank");
 }
