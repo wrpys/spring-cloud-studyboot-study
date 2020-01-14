@@ -19,8 +19,8 @@ $(function () {
                         anchor: ['Left', 'Right'],
                         overlays: [['Arrow', {location: 0.92, width: 12, length: 12}]],
                         endpoint: ["Dot", {radius: 4}],
-                        paintStyle: { stroke: '#7B868C', strokeWidth: 1.5 },
-                        endpointStyle: { fill: '#7B868C', outlineWidth: 1 }
+                        paintStyle: {stroke: '#7B868C', strokeWidth: 1.5},
+                        endpointStyle: {fill: '#7B868C', outlineWidth: 1}
                     })
                 }
             }
@@ -56,7 +56,12 @@ function toSummary() {
     window.location.href = "summary";
 }
 
-// 打开tab
+// 打开门户tab
 function openTab(menuName, menuAddr) {
     parent.open_cct_tab(menuName, menuAddr);
+}
+
+// 打开浏览器tab
+function openBrowserTab(url) {
+    window.open(url, "_blank");
 }

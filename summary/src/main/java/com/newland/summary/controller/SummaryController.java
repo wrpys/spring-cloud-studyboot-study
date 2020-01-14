@@ -18,7 +18,7 @@ import java.io.IOException;
 @Controller
 public class SummaryController {
 
-    @Value("${taiot-path.agricultural:http://10.1.7.142:8190/taiot/agricultural}")
+    @Value("${taiot-path.agricultural:http://trace.qrclub.com.cn/taiot/agricultural}")
     private String agriculturalPath;
 
     @PostMapping(value = "summary")
